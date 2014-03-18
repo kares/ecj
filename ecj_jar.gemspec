@@ -13,7 +13,7 @@ Gem::Specification.new do |gem|
   gem.authors     = ["Karol Bucek"]
   gem.email       = ["self@kares.org"]
   gem.homepage    = 'http://projects.eclipse.org/projects/eclipse.jdt'
-  gem.licenses    = ['EPL-1']
+  gem.licenses    = ['EPL 1.0']
 
   gem.files = `git ls-files -z`.split("\x0").sort.
     select { |file| file == 'ecj_jar.gemspec' || file =~ /^jar\// }
