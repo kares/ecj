@@ -6,6 +6,7 @@ Gem::Specification.new do |gem|
 
   jar_version = File.expand_path('../jar/ecj/jar.rb', __FILE__)
   gem.version = File.read(jar_version).match( /.*JAR_VERSION\s*=\s*['"](.*)['"]$/m )[1]
+  gem.version = "#{gem.version}.#{ENV['PATCH_VERSION']}" if ENV['PATCH_VERSION']
 
   gem.summary     = "Eclipse Compiler (for Java)"
   gem.description = "Eclipse's JDT Core (Batch) Compiler a.k.a. **ecj.jar** packaged."
