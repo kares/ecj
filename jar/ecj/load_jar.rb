@@ -1,0 +1,1 @@
+require 'ecj/jar'; ECJ.load_jar
